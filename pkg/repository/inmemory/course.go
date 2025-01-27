@@ -62,6 +62,8 @@ func (repo *InMemoryCourseRepository) UpdateCourse(courseId int, updateCourse mo
 			repo.Courses[i].Credits = updateCourse.Credits
 			repo.Courses[i].Instructor = updateCourse.Instructor
 			repo.Courses[i].Schedule = updateCourse.Schedule
+			repo.Courses[i].Capacity = updateCourse.Capacity
+			repo.Courses[i].AvailableSeats = updateCourse.AvailableSeats
 			return nil
 		}
 	}

@@ -7,7 +7,7 @@ import (
 )
 
 type Config struct {
-	Env         string `yaml:"env" env:"ENV" env-required:"true" env-default:"production"`
+	Env         string `yaml:"env" env:"ENV" env-required:"true"`
 	HTTPServer  `yaml:"http_server"`
 	Log         `yaml:"log"`
 	MysqlConfig `yaml:"mysql_config"`
